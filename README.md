@@ -10,9 +10,33 @@
 
 **跨日去重整理：同一個 GitHub repo 只在主索引保留一次，完整日報仍保留原始排序。**
 
-[📌 去重總索引](#-去重總索引) · [📅 歷史報告](#-歷史報告) · [🧭 趨勢雷達](#-趨勢雷達) · [🎯 整理規則](#-整理規則)
+[⭐ 推薦研究](#-推薦研究) · [📌 去重總索引](#-去重總索引) · [📅 歷史報告](#-歷史報告) · [🧭 趨勢雷達](#-趨勢雷達) · [🎯 整理規則](#-整理規則)
 
 </div>
+
+---
+
+## ⭐ 推薦研究
+
+> 以下依可落地性、技術延展性與學習價值排序；不是依 star 數量排名。
+
+| 優先度 | Repo | 適合研究的情境 | 推薦原因 |
+|:---:|:---|:---|:---|
+| 1 | [modiqo/skillspec](https://github.com/modiqo/skillspec) | 想把 Agent skills 導入團隊或產品 | 它把 skills 從提示詞集合提升為可規格化、可測試、可驗證的工程資產，直接處理可維護性與風險診斷。 |
+| 2 | [Sahir619/fable-method](https://github.com/Sahir619/fable-method) | 想建立可重複使用的 Agent 工作流程 | 將 think／act 流程與評測綁在一起，重點是讓流程能跨模型複用並持續驗證，而不只是追逐單一模型。 |
+| 3 | [deer-flow/llm-space](https://github.com/deer-flow/llm-space) | 正在開發或除錯 Agent | 能檢視 harness 的執行步驟、重播失敗案例與評估效能；這正是 Agent 從 demo 走向可靠系統時最需要的能力。 |
+| 4 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 想研究 coding agent 的長期記憶 | 把 codebase 索引為可持久查詢的知識，適合拆解 MCP、程式碼檢索與 context 管理的架構取捨。 |
+| 5 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) | 想建立 Agent 安全測試能力 | 多代理紅隊演練提供具體的攻擊面與測試流程，可用來設計自己的安全評估；應只在隔離、授權環境研究。 |
+| 6 | [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) | 想做多模態產品或影片理解 | 將場景切分、去重影格與逐字稿結合，提供比單純丟影片給模型更可控的本地分析管線。 |
+| 7 | [William-Lu-stack/Flawless](https://github.com/William-Lu-stack/Flawless) | 維運 Kubernetes 或雲端平台 | 把 AI Agent 用在 SRE／AgenticOps；若你的工作重心是基礎設施，這個項目的優先度可提升到前 3。 |
+
+### 一般情況的股市研究首選
+
+| 推薦 | Repo | 為什麼適合一般情況 | 使用前要知道 |
+|:---:|:---|:---|:---|
+| **首選** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 支援台股、A 股、港股、美股、日股、韓股與 ETF；整合多市場資料、新聞、報告與自動推送，並提供 GitHub Actions 的低門檻定時部署，適合先建立自己的自選股研究與每日復盤流程。 | 需要設定 LLM 與資料來源；免費資料源可能受限流或波動影響。所有分析、評分與回測都只適合輔助研究，不構成買賣建議，仍需自行驗證資料與風險。 |
+
+> 若只研究 A 股、且需要更深入的選股、監控與回測，再看 [shy3130/tickflow-stock-panel](https://github.com/shy3130/tickflow-stock-panel)；它更偏量化工作台，設定與使用門檻也較高。
 
 ---
 

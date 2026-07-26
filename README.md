@@ -4,9 +4,9 @@
 
 ### 每天 5 分鐘，追蹤正在爆紅的 AI / LLM / Agent 開源專案
 
-[![Daily Update](https://img.shields.io/badge/更新頻率-每日-brightgreen?style=for-the-badge)](./ai-repos-2026-07-25.md)
+[![Daily Update](https://img.shields.io/badge/更新頻率-每日-brightgreen?style=for-the-badge)](./ai-repos-2026-07-26.md)
 [![Focus](https://img.shields.io/badge/聚焦-AI%20%2F%20LLM%20%2F%20Agent-blue?style=for-the-badge)](https://github.com/topics/ai)
-[![Latest](https://img.shields.io/badge/最新報告-2026--07--25-orange?style=for-the-badge)](./ai-repos-2026-07-25.md)
+[![Latest](https://img.shields.io/badge/最新報告-2026--07--26-orange?style=for-the-badge)](./ai-repos-2026-07-26.md)
 
 **跨日去重整理：同一個 GitHub repo 只在主索引保留一次，完整日報仍保留原始排序。**
 
@@ -22,9 +22,9 @@
 
 | 日期 | 最值得點開的主題 | 一句話亮點 | 完整文章 |
 |:---:|:---|:---|:---:|
+| **07-26** | **AI 手寫畫布一天暴增 280 星** | penecho 持續加速；聊天框之外的人機協作，正成為最有話題的新方向。 | [看今日速報 →](./ai-repos-2026-07-26.md) |
 | **07-25** | **11 天突破 1,300 星的 AI 手寫畫布** | penecho 證明聊天框不是唯一答案；open-kritt 也把多 Agent 帶進漏洞搜尋。 | [看成長故事 →](./ai-repos-2026-07-25.md) |
 | **07-23** | **AI 跳出聊天框，開始一起畫圖與推理** | 共用手寫畫布與多 Agent 資安工具，是這批真正有新意的兩個黑馬。 | [看新星專案 →](./ai-repos-2026-07-23.md) |
-| **07-22** | **AI 開始替你守住注意力** | 從影片理解、Agent 除錯到通知管理，焦點已從聊天轉向真實工作。 | [看開源黑馬 →](./ai-repos-2026-07-22.md) |
 
 ---
 
@@ -54,13 +54,13 @@
 
 ## 📌 去重總索引
 
-> 更新至：**2026-07-25** · 已整合 **19 份報告** · 共 **44 個不重複 repo**<br>
+> 更新至：**2026-07-26** · 已整合 **20 份報告** · 共 **44 個不重複 repo**<br>
 > 星數採各 repo 在報告中最後一次出現的觀測值；「首次收錄」代表第一次進入本專案日報的日期。
 
 | 首次收錄 | 最後觀測 | Repo | ⭐ 最新觀測 | 一句話看懂 |
 |:---|:---|:---|---:|:---|
-| 2026-07-23 | 2026-07-25 | [penecho/penecho](https://github.com/penecho/penecho) | 1,327 | 讓人與 AI 透過手寫、公式、圖表和空間關係在同一張畫布上思考。 |
-| 2026-07-23 | 2026-07-25 | [Kritt-ai/open-kritt](https://github.com/Kritt-ai/open-kritt) | 359 | 編排多個 AI Agent，在程式碼中尋找真實漏洞。 |
+| 2026-07-23 | 2026-07-26 | [penecho/penecho](https://github.com/penecho/penecho) | 1,607 | 讓人與 AI 透過手寫、公式、圖表和空間關係在同一張畫布上思考。 |
+| 2026-07-23 | 2026-07-26 | [Kritt-ai/open-kritt](https://github.com/Kritt-ai/open-kritt) | 391 | 編排多個 AI Agent，在程式碼中尋找真實漏洞。 |
 | 2026-07-21 | 2026-07-21 | [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | 25,733 | 以自然語言驅動交易研究與策略流程的個人交易 Agent。 |
 | 2026-07-21 | 2026-07-21 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | 24,442 | 在本機評估職缺、客製履歷、撰寫求職信並準備面試的 AI 求職框架。 |
 | 2026-07-21 | 2026-07-21 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 14,257 | 給 Claude Code、Cursor、Codex 使用的 anti-AI-slop 設計 skill。 |
@@ -69,15 +69,15 @@
 | 2026-07-19 | 2026-07-19 | [axislab-top/Foundry](https://github.com/axislab-top/Foundry) | 523 | 把一個想法轉成能運作的 AI-powered company。 |
 | 2026-07-19 | 2026-07-19 | [Brain0-ai/brain0](https://github.com/Brain0-ai/brain0) | 457 | 記錄 AI 寫程式背後的 prompts 與決策，提供稽核、風險和來源追蹤。 |
 | 2026-07-19 | 2026-07-19 | [bkingfilm/lapian-notes](https://github.com/bkingfilm/lapian-notes) | 371 | 本地 AI 電影拉片工具，自動生成劇情時間軸、結構樹與情緒曲線。 |
-| 2026-07-18 | 2026-07-25 | [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) | 1,836 | 讓 Claude 或其他 LLM 以場景感知、去重影格與逐字稿理解影片的本地工具。 |
+| 2026-07-18 | 2026-07-26 | [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) | 1,856 | 讓 Claude 或其他 LLM 以場景感知、去重影格與逐字稿理解影片的本地工具。 |
 | 2026-07-18 | 2026-07-23 | [deer-flow/llm-space](https://github.com/deer-flow/llm-space) | 1,167 | 桌面 agent 原型工具，可檢視 harness 步驟、重播失敗案例並評估效能。 |
-| 2026-07-17 | 2026-07-25 | [William-Lu-stack/Flawless](https://github.com/William-Lu-stack/Flawless) | 850 | 面向 Kubernetes 與雲端基礎設施的 AI SRE（AgenticOps）自動化工具。 |
-| 2026-07-15 | 2026-07-25 | [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) | 1,240 | WorkBuddy 的開源實戰指南，彙整工作流、Skills、MCP、自動化與多代理範例。 |
-| 2026-07-15 | 2026-07-25 | [Sahir619/fable-method](https://github.com/Sahir619/fable-method) | 1,836 | 將 Claude Fable 5 工作方法整理成可供不同模型使用的 think／act 技能集與評測。 |
-| 2026-07-14 | 2026-07-25 | [SmileLikeYe/agent-chief](https://github.com/SmileLikeYe/agent-chief) | 1,013 | local-first 的注意力守門層，將 agent、警報與資訊流整合成單一可信介面。 |
+| 2026-07-17 | 2026-07-26 | [William-Lu-stack/Flawless](https://github.com/William-Lu-stack/Flawless) | 850 | 面向 Kubernetes 與雲端基礎設施的 AI SRE（AgenticOps）自動化工具。 |
+| 2026-07-15 | 2026-07-26 | [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) | 1,278 | WorkBuddy 的開源實戰指南，彙整工作流、Skills、MCP、自動化與多代理範例。 |
+| 2026-07-15 | 2026-07-26 | [Sahir619/fable-method](https://github.com/Sahir619/fable-method) | 1,908 | 將 Claude Fable 5 工作方法整理成可供不同模型使用的 think／act 技能集與評測。 |
+| 2026-07-14 | 2026-07-26 | [SmileLikeYe/agent-chief](https://github.com/SmileLikeYe/agent-chief) | 1,014 | local-first 的注意力守門層，將 agent、警報與資訊流整合成單一可信介面。 |
 | 2026-07-11 | 2026-07-11 | [modiqo/cliare](https://github.com/modiqo/cliare) | 712 | CLI「代理就緒度」量測工具，評估命令列工具對 AI agent 的友善程度。 |
 | 2026-07-10 | 2026-07-22 | [uzairansaruzi/hermex](https://github.com/uzairansaruzi/hermex) | 891 | Hermes agent 的原生 iPhone App，讓個人 AI 代理可在行動裝置使用。 |
-| 2026-07-10 | 2026-07-25 | [simonlin1212/Vibe-Research](https://github.com/simonlin1212/Vibe-Research) | 984 | 個人投資研究 Agent，涵蓋 A 股／美股／港股的復盤、資訊雷達與持倉研究。 |
+| 2026-07-10 | 2026-07-26 | [simonlin1212/Vibe-Research](https://github.com/simonlin1212/Vibe-Research) | 1,001 | 個人投資研究 Agent，涵蓋 A 股／美股／港股的復盤、資訊雷達與持倉研究。 |
 | 2026-07-09 | 2026-07-21 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 58,754 | 讓 AI 代理透過 CLI 搜尋並讀取 Twitter、Reddit、YouTube、GitHub 等平台內容。 |
 | 2026-07-09 | 2026-07-21 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | 40,540 | 開源的 agentic 影片製作系統，把 AI 編碼助手變成多工具製片工作室。 |
 | 2026-07-09 | 2026-07-09 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 55,908 | LLM 驅動的多市場股票分析系統，整合行情、新聞、看板與自動推播。 |
@@ -87,10 +87,10 @@
 | 2026-07-09 | 2026-07-21 | [stablyai/orca](https://github.com/stablyai/orca) | 23,671 | 專為同時操控多個並行代理而生的 ADE。 |
 | 2026-07-09 | 2026-07-09 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 12,506 | NVIDIA 開源的 AI agent skills 安全掃描器，偵測漏洞與惡意樣態。 |
 | 2026-07-09 | 2026-07-09 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 13,792 | 免費 AI gateway，以單一端點串接多家模型供應商並節省 token。 |
-| 2026-07-08 | 2026-07-25 | [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 2,704 | 面向科學研究的 AI workbench，加速實驗設計、資料分析與研究流程。 |
+| 2026-07-08 | 2026-07-26 | [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 2,778 | 面向科學研究的 AI workbench，加速實驗設計、資料分析與研究流程。 |
 | 2026-07-08 | 2026-07-11 | [eli-labz/Third-Eye](https://github.com/eli-labz/Third-Eye) | 934 | 生產級 OSINT 平台，提供多情報領域的即時態勢感知。 |
 | 2026-07-08 | 2026-07-18 | [modiqo/skillspec](https://github.com/modiqo/skillspec) | 979 | 讓 agent 技能可依循、可測試、可驗證的規格與診斷工具。 |
-| 2026-07-06 | 2026-07-25 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) | 5,129 | 多代理紅隊演練平台，用於自動化滲透與攻擊性資安測試。 |
+| 2026-07-06 | 2026-07-26 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) | 5,194 | 多代理紅隊演練平台，用於自動化滲透與攻擊性資安測試。 |
 | 2026-07-06 | 2026-07-06 | [alchaincyf/fanbox](https://github.com/alchaincyf/fanbox) | 887 | 「vibe coding」駕駛艙，集中檔案、終端機與每次改動檢視。 |
 | 2026-07-05 | 2026-07-22 | [jmerelnyc/Talos](https://github.com/jmerelnyc/Talos) | 988 | Talos 網路 GPU 工作節點客戶端，承接推論任務並回報運行時間。 |
 | 2026-07-05 | 2026-07-18 | [sums001/Windows-Copilot-API](https://github.com/sums001/Windows-Copilot-API) | 1,133 | 將 Windows Copilot 逆向封裝成 OpenAI-compatible API；使用前需留意合規。 |
@@ -110,7 +110,8 @@
 
 | 日期 | 原始收錄數 | 去重新增 | 完整報告 |
 |:---|---:|---:|:---|
-| **2026-07-25** | 10 | 0 | [成長故事 →](./ai-repos-2026-07-25.md) |
+| **2026-07-26** | 10 | 0 | [今日速報 →](./ai-repos-2026-07-26.md) |
+| 2026-07-25 | 10 | 0 | [成長故事 →](./ai-repos-2026-07-25.md) |
 | 2026-07-23 | 10 | 2 | [新星專案 →](./ai-repos-2026-07-23.md) |
 | 2026-07-22 | 10 | 0 | [開源黑馬 →](./ai-repos-2026-07-22.md) |
 | 2026-07-21 | 10 | 5 | [趨勢特刊 →](./ai-repos-2026-07-21.md) |
@@ -162,7 +163,7 @@
 
 **資料口徑提醒**
 
-- 2026-07-03、2026-07-05、2026-07-06、2026-07-08、2026-07-10、2026-07-11、2026-07-13 至 2026-07-20、2026-07-22、2026-07-23 與 2026-07-25 報告主要鎖定近 30 天內建立的 AI / LLM / Agent 專案。
+- 2026-07-03、2026-07-05、2026-07-06、2026-07-08、2026-07-10、2026-07-11、2026-07-13 至 2026-07-20、2026-07-22、2026-07-23、2026-07-25 與 2026-07-26 報告主要鎖定近 30 天內建立的 AI / LLM / Agent 專案。
 - 2026-07-09 與 2026-07-21 報告改以 GitHub Trending 週榜／月榜與專案頁觀測近期爆紅專案，因此部分項目建立時間早於 30 天窗口。
 - 星數、建立日期與描述皆以各日報中的觀測資料為準，GitHub 即時數值可能已不同。
 

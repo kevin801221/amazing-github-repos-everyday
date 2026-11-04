@@ -1,180 +1,499 @@
 <div align="center">
 
-# 🔥 Amazing GitHub Repos Everyday
+# 🚀 Awesome AI Agent Engineering
 
-### 每天 5 分鐘，追蹤正在爆紅的 AI / LLM / Agent 開源專案
+### 從「收藏熱門 Repo」到「打造能正式交付的 AI Agent 系統」
 
-[![Daily Update](https://img.shields.io/badge/更新頻率-每日-brightgreen?style=for-the-badge)](./ai-repos-2026-07-26.md)
-[![Focus](https://img.shields.io/badge/聚焦-AI%20%2F%20LLM%20%2F%20Agent-blue?style=for-the-badge)](https://github.com/topics/ai)
-[![Latest](https://img.shields.io/badge/最新報告-2026--07--26-orange?style=for-the-badge)](./ai-repos-2026-07-26.md)
+**A curated, practical, Traditional Chinese guide to AI Agents, Coding Agents, Skills, MCP, RAG, Computer Use, Evaluation & Enterprise AI.**
 
-**跨日去重整理：同一個 GitHub repo 只在主索引保留一次，完整日報仍保留原始排序。**
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Language](https://img.shields.io/badge/Language-繁體中文-0f766e)](#)
+[![Focus](https://img.shields.io/badge/Focus-Engineering%20%26%20Production-2563eb)](#)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-f59e0b)](#貢獻指南)
 
-[🔥 近三日必看](#-近三日必看) · [⭐ 推薦研究](#-推薦研究) · [📌 去重總索引](#-去重總索引) · [📅 歷史報告](#-歷史報告) · [🧭 趨勢雷達](#-趨勢雷達)
+[📜 舊版首頁與歷史索引](./README_ARCHIVE_2026-07-26.md) · [📁 每日追蹤歷史檔案](./)
+
+**不是另一份只有連結的 Awesome List。** 這份指南回答三個問題：**這工具解決什麼問題？什麼時候該用？如何驗證真的有用？**
+
+[⚡ 先看精選](#-編輯精選從這裡開始) · [🧭 選型指南](#-30-秒選型指南) · [🗺️ 技術地圖](#-ai-agent-技術地圖) · [📚 Repo 全索引](#-repo-全索引) · [🛠️ 實戰專案](#-從收藏到實作五個-project-blueprints) · [🤝 貢獻](#-貢獻指南)
 
 </div>
 
----
+> [!IMPORTANT]
+> **資料整理日：2026-11-04。** 本清單整理自歷次 GitHub AI Agent 追蹤紀錄，已去除重複項目，並依用途重新編排。它是**編輯精選與選型指南**，不是 GitHub 官方 Trending 排行，也不宣稱列出的專案都在當日熱門榜。開源專案變動很快，請以連結中的官方 README、版本、授權與安全公告為準。為避免誤導，**不放入無法持續維護的即時 Star 數及成長率**。
 
-## 🔥 近三日必看
+## ✨ 為什麼值得收藏？
 
-> 不想翻完整榜單？先從你最有感的題目點進去。
-
-| 日期 | 最值得點開的主題 | 一句話亮點 | 完整文章 |
-|:---:|:---|:---|:---:|
-| **07-26** | **AI 手寫畫布一天暴增 280 星** | penecho 持續加速；聊天框之外的人機協作，正成為最有話題的新方向。 | [看今日速報 →](./ai-repos-2026-07-26.md) |
-| **07-25** | **11 天突破 1,300 星的 AI 手寫畫布** | penecho 證明聊天框不是唯一答案；open-kritt 也把多 Agent 帶進漏洞搜尋。 | [看成長故事 →](./ai-repos-2026-07-25.md) |
-| **07-23** | **AI 跳出聊天框，開始一起畫圖與推理** | 共用手寫畫布與多 Agent 資安工具，是這批真正有新意的兩個黑馬。 | [看新星專案 →](./ai-repos-2026-07-23.md) |
-
----
-
-## ⭐ 推薦研究
-
-> 以下依可落地性、技術延展性與學習價值排序；不是依 star 數量排名。
-
-| 優先度 | Repo | 適合研究的情境 | 推薦原因 |
-|:---:|:---|:---|:---|
-| 1 | [modiqo/skillspec](https://github.com/modiqo/skillspec) | 想把 Agent skills 導入團隊或產品 | 它把 skills 從提示詞集合提升為可規格化、可測試、可驗證的工程資產，直接處理可維護性與風險診斷。 |
-| 2 | [Sahir619/fable-method](https://github.com/Sahir619/fable-method) | 想建立可重複使用的 Agent 工作流程 | 將 think／act 流程與評測綁在一起，重點是讓流程能跨模型複用並持續驗證，而不只是追逐單一模型。 |
-| 3 | [deer-flow/llm-space](https://github.com/deer-flow/llm-space) | 正在開發或除錯 Agent | 能檢視 harness 的執行步驟、重播失敗案例與評估效能；這正是 Agent 從 demo 走向可靠系統時最需要的能力。 |
-| 4 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 想研究 coding agent 的長期記憶 | 把 codebase 索引為可持久查詢的知識，適合拆解 MCP、程式碼檢索與 context 管理的架構取捨。 |
-| 5 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) | 想建立 Agent 安全測試能力 | 多代理紅隊演練提供具體的攻擊面與測試流程，可用來設計自己的安全評估；應只在隔離、授權環境研究。 |
-| 6 | [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) | 想做多模態產品或影片理解 | 將場景切分、去重影格與逐字稿結合，提供比單純丟影片給模型更可控的本地分析管線。 |
-| 7 | [William-Lu-stack/Flawless](https://github.com/William-Lu-stack/Flawless) | 維運 Kubernetes 或雲端平台 | 把 AI Agent 用在 SRE／AgenticOps；若你的工作重心是基礎設施，這個項目的優先度可提升到前 3。 |
-
-### 一般情況的股市研究首選
-
-| 推薦 | Repo | 為什麼適合一般情況 | 使用前要知道 |
-|:---:|:---|:---|:---|
-| **首選** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 支援台股、A 股、港股、美股、日股、韓股與 ETF；整合多市場資料、新聞、報告與自動推送，並提供 GitHub Actions 的低門檻定時部署，適合先建立自己的自選股研究與每日復盤流程。 | 需要設定 LLM 與資料來源；免費資料源可能受限流或波動影響。所有分析、評分與回測都只適合輔助研究，不構成買賣建議，仍需自行驗證資料與風險。 |
-
-> 若只研究 A 股、且需要更深入的選股、監控與回測，再看 [shy3130/tickflow-stock-panel](https://github.com/shy3130/tickflow-stock-panel)；它更偏量化工作台，設定與使用門檻也較高。
+- **按問題找工具**：從「我要做多 Agent」、「我要讓 Agent 操作網頁」到「如何防止越權」，皆可直接找到候選方案。
+- **區分工具層次**：Framework、Harness、Runtime、Orchestrator、Skill、MCP、Memory、Evaluation，不再混為一談。
+- **關注正式部署**：權限、審核、追蹤、隔離、成本、可靠性與 ROI，不只看 Demo。
+- **提供實戰專案**：給出架構組合、測試方法及驗收指標，而不是只說「值得學習」。
+- **繁體中文、保留英文專有名詞**：適合台灣工程師、AI 架構師、顧問與技術 PM。
 
 ---
 
-## 📌 去重總索引
+## 📑 目錄
 
-> 更新至：**2026-07-26** · 已整合 **20 份報告** · 共 **44 個不重複 repo**<br>
-> 星數採各 repo 在報告中最後一次出現的觀測值；「首次收錄」代表第一次進入本專案日報的日期。
-
-| 首次收錄 | 最後觀測 | Repo | ⭐ 最新觀測 | 一句話看懂 |
-|:---|:---|:---|---:|:---|
-| 2026-07-23 | 2026-07-26 | [penecho/penecho](https://github.com/penecho/penecho) | 1,607 | 讓人與 AI 透過手寫、公式、圖表和空間關係在同一張畫布上思考。 |
-| 2026-07-23 | 2026-07-26 | [Kritt-ai/open-kritt](https://github.com/Kritt-ai/open-kritt) | 391 | 編排多個 AI Agent，在程式碼中尋找真實漏洞。 |
-| 2026-07-21 | 2026-07-21 | [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | 25,733 | 以自然語言驅動交易研究與策略流程的個人交易 Agent。 |
-| 2026-07-21 | 2026-07-21 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | 24,442 | 在本機評估職缺、客製履歷、撰寫求職信並準備面試的 AI 求職框架。 |
-| 2026-07-21 | 2026-07-21 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 14,257 | 給 Claude Code、Cursor、Codex 使用的 anti-AI-slop 設計 skill。 |
-| 2026-07-21 | 2026-07-21 | [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | 18,786 | 在終端機同時管理、切換與監控多個 AI coding agents。 |
-| 2026-07-21 | 2026-07-21 | [tirth8205/code-review-graph](https://github.com/tirth8205/code-review-graph) | 23,307 | 為 codebase 建立持久地圖，讓 AI coding 工具只讀真正相關的內容。 |
-| 2026-07-19 | 2026-07-19 | [axislab-top/Foundry](https://github.com/axislab-top/Foundry) | 523 | 把一個想法轉成能運作的 AI-powered company。 |
-| 2026-07-19 | 2026-07-19 | [Brain0-ai/brain0](https://github.com/Brain0-ai/brain0) | 457 | 記錄 AI 寫程式背後的 prompts 與決策，提供稽核、風險和來源追蹤。 |
-| 2026-07-19 | 2026-07-19 | [bkingfilm/lapian-notes](https://github.com/bkingfilm/lapian-notes) | 371 | 本地 AI 電影拉片工具，自動生成劇情時間軸、結構樹與情緒曲線。 |
-| 2026-07-18 | 2026-07-26 | [HUANGCHIHHUNGLeo/claude-real-video](https://github.com/HUANGCHIHHUNGLeo/claude-real-video) | 1,856 | 讓 Claude 或其他 LLM 以場景感知、去重影格與逐字稿理解影片的本地工具。 |
-| 2026-07-18 | 2026-07-23 | [deer-flow/llm-space](https://github.com/deer-flow/llm-space) | 1,167 | 桌面 agent 原型工具，可檢視 harness 步驟、重播失敗案例並評估效能。 |
-| 2026-07-17 | 2026-07-26 | [William-Lu-stack/Flawless](https://github.com/William-Lu-stack/Flawless) | 850 | 面向 Kubernetes 與雲端基礎設施的 AI SRE（AgenticOps）自動化工具。 |
-| 2026-07-15 | 2026-07-26 | [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) | 1,278 | WorkBuddy 的開源實戰指南，彙整工作流、Skills、MCP、自動化與多代理範例。 |
-| 2026-07-15 | 2026-07-26 | [Sahir619/fable-method](https://github.com/Sahir619/fable-method) | 1,908 | 將 Claude Fable 5 工作方法整理成可供不同模型使用的 think／act 技能集與評測。 |
-| 2026-07-14 | 2026-07-26 | [SmileLikeYe/agent-chief](https://github.com/SmileLikeYe/agent-chief) | 1,014 | local-first 的注意力守門層，將 agent、警報與資訊流整合成單一可信介面。 |
-| 2026-07-11 | 2026-07-11 | [modiqo/cliare](https://github.com/modiqo/cliare) | 712 | CLI「代理就緒度」量測工具，評估命令列工具對 AI agent 的友善程度。 |
-| 2026-07-10 | 2026-07-22 | [uzairansaruzi/hermex](https://github.com/uzairansaruzi/hermex) | 891 | Hermes agent 的原生 iPhone App，讓個人 AI 代理可在行動裝置使用。 |
-| 2026-07-10 | 2026-07-26 | [simonlin1212/Vibe-Research](https://github.com/simonlin1212/Vibe-Research) | 1,001 | 個人投資研究 Agent，涵蓋 A 股／美股／港股的復盤、資訊雷達與持倉研究。 |
-| 2026-07-09 | 2026-07-21 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 58,754 | 讓 AI 代理透過 CLI 搜尋並讀取 Twitter、Reddit、YouTube、GitHub 等平台內容。 |
-| 2026-07-09 | 2026-07-21 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | 40,540 | 開源的 agentic 影片製作系統，把 AI 編碼助手變成多工具製片工作室。 |
-| 2026-07-09 | 2026-07-09 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 55,908 | LLM 驅動的多市場股票分析系統，整合行情、新聞、看板與自動推播。 |
-| 2026-07-09 | 2026-07-21 | [JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | 29,126 | 搭配 AI 編碼代理快速複製網站，產出可用的專案骨架。 |
-| 2026-07-09 | 2026-07-21 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 33,273 | 高效能程式碼理解 MCP，將 codebase 建成持久化知識圖譜。 |
-| 2026-07-09 | 2026-07-09 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 23,063 | 產品經理用的 agent 技能、指令與外掛市集，覆蓋策略到成長流程。 |
-| 2026-07-09 | 2026-07-21 | [stablyai/orca](https://github.com/stablyai/orca) | 23,671 | 專為同時操控多個並行代理而生的 ADE。 |
-| 2026-07-09 | 2026-07-09 | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | 12,506 | NVIDIA 開源的 AI agent skills 安全掃描器，偵測漏洞與惡意樣態。 |
-| 2026-07-09 | 2026-07-09 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 13,792 | 免費 AI gateway，以單一端點串接多家模型供應商並節省 token。 |
-| 2026-07-08 | 2026-07-26 | [synthetic-sciences/openscience](https://github.com/synthetic-sciences/openscience) | 2,778 | 面向科學研究的 AI workbench，加速實驗設計、資料分析與研究流程。 |
-| 2026-07-08 | 2026-07-11 | [eli-labz/Third-Eye](https://github.com/eli-labz/Third-Eye) | 934 | 生產級 OSINT 平台，提供多情報領域的即時態勢感知。 |
-| 2026-07-08 | 2026-07-18 | [modiqo/skillspec](https://github.com/modiqo/skillspec) | 979 | 讓 agent 技能可依循、可測試、可驗證的規格與診斷工具。 |
-| 2026-07-06 | 2026-07-26 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) | 5,194 | 多代理紅隊演練平台，用於自動化滲透與攻擊性資安測試。 |
-| 2026-07-06 | 2026-07-06 | [alchaincyf/fanbox](https://github.com/alchaincyf/fanbox) | 887 | 「vibe coding」駕駛艙，集中檔案、終端機與每次改動檢視。 |
-| 2026-07-05 | 2026-07-22 | [jmerelnyc/Talos](https://github.com/jmerelnyc/Talos) | 988 | Talos 網路 GPU 工作節點客戶端，承接推論任務並回報運行時間。 |
-| 2026-07-05 | 2026-07-18 | [sums001/Windows-Copilot-API](https://github.com/sums001/Windows-Copilot-API) | 1,133 | 將 Windows Copilot 逆向封裝成 OpenAI-compatible API；使用前需留意合規。 |
-| 2026-07-03 | 2026-07-11 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 80,355 | 用 YAGNI 約束 AI coding agent，主張少寫程式碼、避免過度工程。 |
-| 2026-07-03 | 2026-07-08 | [XiaomiMiMo/MiMo-Code](https://github.com/XiaomiMiMo/MiMo-Code) | 11,590 | 小米開源的程式碼代理專案，主打模型與 agent 共同演化。 |
-| 2026-07-03 | 2026-07-10 | [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | 6,930 | 統一調度 Claude Code、Codex、Cursor 等多種代理的 meta-harness。 |
-| 2026-07-03 | 2026-07-06 | [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | 5,943 | loop engineering 模式、範本與 CLI，設計能持續提示 AI agent 的系統。 |
-| 2026-07-03 | 2026-07-17 | [shy3130/tickflow-stock-panel](https://github.com/shy3130/tickflow-stock-panel) | 2,220 | LLM 驅動的 A 股選股、監控與回測量化工作台。 |
-| 2026-07-03 | 2026-07-10 | [TestSprite/testsprite-cli](https://github.com/TestSprite/testsprite-cli) | 2,272 | 在終端機執行 AI 驅動自動化測試的 TestSprite 官方 CLI。 |
-| 2026-07-03 | 2026-07-13 | [benchflow-ai/awesome-evals](https://github.com/benchflow-ai/awesome-evals) | 708 | 建構與評測 AI agent 的精選論文、工具、演講與 benchmark 清單。 |
-| 2026-07-03 | 2026-07-14 | [raiyanyahya/recall](https://github.com/raiyanyahya/recall) | 708 | Claude Code 持久記憶工具，local-first 並用摘要節省 token。 |
-| 2026-07-03 | 2026-07-06 | [tigicion/dao-code](https://github.com/tigicion/dao-code) | 1,604 | DeepSeek-V4 取向的終端機 coding agent，支援 1M context、MCP 與 Hooks。 |
+- [🏆 編輯精選：從這裡開始](#-編輯精選從這裡開始)
+- [🧭 30 秒選型指南](#-30-秒選型指南)
+- [🗺️ AI Agent 技術地圖](#-ai-agent-技術地圖)
+- [📚 Repo 全索引](#-repo-全索引)
+  - [01. Agent Frameworks 與 Orchestration](#01-agent-frameworks-與-orchestration)
+  - [02. Coding Agents 與開發工作台](#02-coding-agents-與開發工作台)
+  - [03. Skills、Prompt Workflow 與規格驅動開發](#03-skillsprompt-workflow-與規格驅動開發)
+  - [04. Browser Automation 與 Computer Use](#04-browser-automation-與-computer-use)
+  - [05. Memory、Context Engineering 與 RAG](#05-memorycontext-engineering-與-rag)
+  - [06. Evaluation、Security 與 Governance](#06-evaluationsecurity-與-governance)
+  - [07. Enterprise Integration、Data 與 Infrastructure](#07-enterprise-integrationdata-與-infrastructure)
+  - [08. AI 商業應用與多模態產品](#08-ai-商業應用與多模態產品)
+  - [09. 學習資源與研究](#09-學習資源與研究)
+- [⚔️ 常見選型對決](#️-常見選型對決)
+- [🛠️ 從收藏到實作：五個 Project Blueprints](#️-從收藏到實作五個-project-blueprints)
+- [🗓️ 30 天學習路線](#️-30-天學習路線)
+- [📏 企業級 Agent 驗收框架](#-企業級-agent-驗收框架)
+- [📊 SWOT](#-swot這份資源庫的價值與限制)
+- [🔎 收錄標準與資料可信度](#-收錄標準與資料可信度)
+- [🤝 貢獻指南](#-貢獻指南)
+- [📖 核心參考資料](#-核心參考資料)
 
 ---
 
-## 📅 歷史報告
+## 🏆 編輯精選：從這裡開始
 
-| 日期 | 原始收錄數 | 去重新增 | 完整報告 |
-|:---|---:|---:|:---|
-| **2026-07-26** | 10 | 0 | [今日速報 →](./ai-repos-2026-07-26.md) |
-| 2026-07-25 | 10 | 0 | [成長故事 →](./ai-repos-2026-07-25.md) |
-| 2026-07-23 | 10 | 2 | [新星專案 →](./ai-repos-2026-07-23.md) |
-| 2026-07-22 | 10 | 0 | [開源黑馬 →](./ai-repos-2026-07-22.md) |
-| 2026-07-21 | 10 | 5 | [趨勢特刊 →](./ai-repos-2026-07-21.md) |
-| 2026-07-20 | 10 | 0 | [開源黑馬 →](./ai-repos-2026-07-20.md) |
-| 2026-07-19 | 14 | 3 | [Agent 專案 →](./ai-repos-2026-07-19.md) |
-| 2026-07-18 | 10 | 2 | [查看 →](./ai-repos-2026-07-18.md) |
-| 2026-07-17 | 10 | 1 | [查看 →](./ai-repos-2026-07-17.md) |
-| 2026-07-16 | 10 | 0 | [查看 →](./ai-repos-2026-07-16.md) |
-| 2026-07-15 | 10 | 2 | [查看 →](./ai-repos-2026-07-15.md) |
-| 2026-07-14 | 10 | 1 | [查看 →](./ai-repos-2026-07-14.md) |
-| 2026-07-13 | 10 | 0 | [查看 →](./ai-repos-2026-07-13.md) |
-| 2026-07-11 | 10 | 1 | [查看 →](./ai-repos-2026-07-11.md) |
-| 2026-07-10 | 10 | 2 | [查看 →](./ai-repos-2026-07-10.md) |
-| **2026-07-09** | 9 | 9 | [查看 →](./ai-repos-2026-07-09.md) |
-| 2026-07-08 | 8 | 3 | [查看 →](./ai-repos-2026-07-08.md) |
-| 2026-07-06 | 9 | 2 | [查看 →](./ai-repos-2026-07-06.md) |
-| 2026-07-05 | 9 | 2 | [查看 →](./ai-repos-2026-07-05.md) |
-| 2026-07-03 | 9 | 9 | [查看 →](./ai-repos-2026-07-03.md) |
+> **推薦理由基於技術學習與應用場景，不代表 Star 排名，也不保證符合正式環境要求。**
+
+| 你想解決的問題 | 優先研究 | 為什麼值得看 | 第一個可驗證成果 |
+|---|---|---|---|
+| 搭建完整 Agent Harness | [Deep Agents](https://github.com/langchain-ai/deepagents) | 工具、檔案系統、任務規劃與 Subagent 的可組合設計 | 完成具有工具呼叫與人工審查的 Agent |
+| 多個 Agent 協調工作 | [Paperclip](https://github.com/paperclipai/paperclip) | 從任務、角色、預算到審批的組織化管理 | 多 Agent 不重複領取任務 |
+| 改善 Coding Agent 開發品質 | [Superpowers](https://github.com/obra/superpowers) | 規格、TDD、Worktree、Code Review 的工程流程 | 與原生 Agent 做同題 A/B Test |
+| 將 Skills 系統化 | [Anthropic Skills](https://github.com/anthropics/skills) | Skill 格式、範例與能力封裝模式 | 做出一個可重用的 `SKILL.md` |
+| Agent 操作網頁 | [agent-browser](https://github.com/vercel-labs/agent-browser) | 結構化頁面觀察與瀏覽器操作 CLI | 完成三種網站操作任務 |
+| Agent 操作桌面軟體 | [Agent Desktop](https://github.com/vercel-labs/agent-desktop) | 作業系統 Accessibility API 與可定位的 UI 元素 | 在隔離環境完成桌面工作流 |
+| Agent 跨 Session 記住進度 | [Claude-Mem](https://github.com/thedotmack/claude-mem) | 開發活動記錄與記憶檢索 | 第二次 Session 少做多少重複工作 |
+| 長期知識與反思 | [Hindsight](https://github.com/vectorize-io/hindsight) | Retain / Recall / Reflect 模式 | 測量跨任務記憶的品質 |
+| Agent 程式碼安全審查 | [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill) | 漏洞尋找與獨立驗證的分工 | 可重現、具證據的稽核結果 |
+| Agent 行為測試 | [Agent Lightning](https://github.com/microsoft/agent-lightning) | Agent 軌跡蒐集與訓練研究 | 建立任務 Reward 與評估集 |
+| 企業資料語意層 | [NVIDIA Auto-Ontology](https://github.com/NVIDIA/auto-ontology) | 商業術語、資料關係與 Text-to-SQL 治理 | 檢查 Agent 能否正確判斷資料不足 |
+| AI Agent 成本與權限治理 | [Nasiko](https://github.com/Nasiko-Labs/nasiko) | Model Routing、Agent Control 與觀測性方向 | 每項任務可追蹤成本與工具使用 |
+
+**只選三個入門？** 建議先用 **Deep Agents → Superpowers → agent-browser**，分別建立 Agent 基礎、工程交付流程，以及能驗收的工具執行能力。
 
 ---
 
-## 🧭 趨勢雷達
+## 🧭 30 秒選型指南
 
-| 趨勢 | 觀察 |
-|:---|:---|
-| **Agentic 內容製作** | 影片生成、網站複製、研究工作台開始把「多工具代理流程」產品化。 |
-| **程式碼記憶與 MCP** | codebase 索引、持久記憶、技能規格正在成為 AI coding agent 的基礎設施。 |
-| **Agent skills 安全** | 技能市集與技能掃描同時升溫，代表 agent 擴充能力開始需要安全邊界。 |
-| **AI 資安與 OSINT** | 紅隊演練、自動化情報分析與社群資料讀取工具快速增加。 |
-| **多代理編排** | meta-harness、ADE、gateway 持續出現，開發者想在同一層抽換與協調不同代理。 |
-| **Agent 可用性延伸** | 原生行動端代理與 CLI agent-ready 評測工具出現，焦點從代理能力延伸到跨裝置使用與工具相容性。 |
-| **Agent 工作流資產化** | 實戰指南與可攜式技能集把工作流程、Skills、MCP 與評測包裝成可複用的開源資產。 |
-| **多模態與 Agent 可觀測性** | 本地影片理解與 agent 執行重播工具開始出現，讓多模態輸入與失敗分析更容易進入日常開發流程。 |
-| **多 Agent 開發環境** | orca、herdr 等工具把多個 coding agents 當成可並行調度、監控與切換的團隊。 |
-| **反 AI 味與成果導向工具** | hallmark、AI 求職與影片理解專案都以一句話可懂的成果切中使用者痛點。 |
-| **聊天框之外的人機介面** | penecho 把手寫、公式、圖表與空間關係帶進 AI 協作，白板可能成為新的互動入口。 |
-| **多 Agent 資安工具** | T3MP3ST 與 open-kritt 分別處理紅隊演練和程式碼漏洞，專業安全流程正在 Agent 化。 |
+| 你的真實需求 | 第一個要查的專案 | 也值得比較 | 避免的誤區 |
+|---|---|---|---|
+| 用 Python 建立可以呼叫工具的 Agent | [Deep Agents](https://github.com/langchain-ai/deepagents) | [LangGraph](https://github.com/langchain-ai/langgraph) | 不要把所有流程都包成自由循環的 Agent |
+| 任務流程有固定分支、人工核准與狀態恢復 | [LangGraph](https://github.com/langchain-ai/langgraph) | [Deep Agents](https://github.com/langchain-ai/deepagents) | 不要只靠 Prompt 保證狀態一致 |
+| 多個 Coding Agents 平行開發 | [Worktrunk](https://github.com/max-sixty/worktrunk) | [Orca](https://github.com/stablyai/orca) | Worktree 不會隔離資料庫、Port 與外部服務 |
+| 跨多個 Session 持續開發 | [Beads](https://github.com/gastownhall/beads) | [Claude-Mem](https://github.com/thedotmack/claude-mem) | Memory ≠ Task Tracking |
+| Agent 研究網站並取得資料 | [Scrapling](https://github.com/D4Vinci/Scrapling) | [agent-browser](https://github.com/vercel-labs/agent-browser) | 不代表能合法或穩定取得所有網站 |
+| 在沒有 API 的桌面系統完成操作 | [Agent Desktop](https://github.com/vercel-labs/agent-desktop) | [Mika](https://github.com/wangzan101/Mika)（Android） | 不要在正式帳號直接測試高權限操作 |
+| 企業知識庫問答 | [WeKnora](https://github.com/Tencent/WeKnora) | [Hindsight](https://github.com/vectorize-io/hindsight) | 檢索到文件不等於答案必然正確 |
+| 企業 SQL 問答 | [Auto-Ontology](https://github.com/NVIDIA/auto-ontology) | [WeKnora](https://github.com/Tencent/WeKnora) | Schema 不是商業指標定義 |
+| Agent 上線前評估 | [iFixAi](https://github.com/ifixai-ai/iFixAi) | [Agent Lightning](https://github.com/microsoft/agent-lightning) | 不要把模型當裁判的評分視為最終事實 |
+| 私有模型與推論最佳化 | [FreeToken](https://github.com/FlashML-org/FreeToken) | [colibri](https://github.com/JustVugg/colibri) | 能載入模型 ≠ 可接受的推論速度 |
+| AI 影片與產品動畫 | [HyperFrames](https://github.com/heygen-com/hyperframes) | [OpenMontage](https://github.com/calesthio/OpenMontage) | 自動製作仍需素材授權及 QA |
+| 社群內容生產與排程 | [Postiz](https://github.com/gitroomhq/postiz-app) | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | Trending 不等於經過時序驗證的爆文 |
 
 ---
 
-## 🎯 整理規則
+## 🗺️ AI Agent 技術地圖
 
 ```text
-去重鍵     → GitHub owner/repo URL
-主索引     → 同一 repo 只保留一次，使用最後一次觀測到的星數與描述
-日期欄位   → 首次收錄 = 第一次進入日報；最後觀測 = 最近一次出現在日報
-歷史報告   → 保留原始每日排序與當日資料，方便回看當天榜單脈絡
+                           ┌─────────────────────────────┐
+                           │         Business Goal       │
+                           │       需求 / KPI / ROI       │
+                           └──────────────┬──────────────┘
+                                          │
+                           ┌──────────────▼──────────────┐
+                           │   Agent Orchestration       │
+                           │  LangGraph / Deep Agents    │
+                           └──────────────┬──────────────┘
+                                          │
+             ┌────────────────────────────┼───────────────────────────┐
+             │                            │                           │
+      ┌──────▼──────┐              ┌──────▼──────┐             ┌──────▼──────┐
+      │ Skills / SOP│              │ Tools / MCP │             │Memory / RAG │
+      │ Superpowers │              │ Browser     │             │ Hindsight   │
+      │ Anthropic   │              │ Desktop/API │             │ Claude-Mem  │
+      └──────┬──────┘              └──────┬──────┘             └──────┬──────┘
+             │                            │                           │
+             └────────────────────────────┼───────────────────────────┘
+                                          │
+                           ┌──────────────▼──────────────┐
+                           │  Execution / Sandbox / CI   │
+                           │ Worktree / Docker / Floci   │
+                           └──────────────┬──────────────┘
+                                          │
+                           ┌──────────────▼──────────────┐
+                           │ Evaluation / Governance     │
+                           │ Security / Trace / Approval │
+                           └──────────────┬──────────────┘
+                                          │
+                           ┌──────────────▼──────────────┐
+                           │      Accepted Outcome       │
+                           │ Quality · Cost · Reliability│
+                           └─────────────────────────────┘
 ```
 
-**資料口徑提醒**
+### 先分清楚六個常被混用的概念
 
-- 2026-07-03、2026-07-05、2026-07-06、2026-07-08、2026-07-10、2026-07-11、2026-07-13 至 2026-07-20、2026-07-22、2026-07-23、2026-07-25 與 2026-07-26 報告主要鎖定近 30 天內建立的 AI / LLM / Agent 專案。
-- 2026-07-09 與 2026-07-21 報告改以 GitHub Trending 週榜／月榜與專案頁觀測近期爆紅專案，因此部分項目建立時間早於 30 天窗口。
-- 星數、建立日期與描述皆以各日報中的觀測資料為準，GitHub 即時數值可能已不同。
+| 名詞 | 白話定義 | 典型關注點 |
+|---|---|---|
+| **Framework** | 建立 Agent 互動、狀態與流程的函式庫 | Graph、State、Tool Calls |
+| **Harness / Runtime** | 讓 Agent 真正工作的一整套執行環境 | Tool Loop、Filesystem、Context、Sandbox |
+| **Orchestrator** | 協調不同 Agent、任務與依賴 | Dispatch、Retry、Queue、Approval |
+| **Skill** | 可重複使用的工作指引與資源 | `SKILL.md`、Scripts、References |
+| **MCP / Tool** | 提供 Agent 可呼叫的外部能力 | API、Browser、Desktop、Permissions |
+| **Evaluation / Governance** | 驗證成果並控制風險 | Accuracy、Policy、Audit、Cost |
+
+> [!TIP]
+> **不要預設 Multi-Agent 一定更好。** 如果任務能清楚拆成固定步驟，先考慮 Deterministic Workflow；只有需要多個獨立專業判斷、平行探索或分工審查時，再考慮 Subagents / Agent Teams。
+
+---
+
+## 📚 Repo 全索引
+
+**閱讀方式：** `⭐ 推薦起點` 表示編輯特別推薦先研究，**不是**官方徽章；`🧪 實驗研究` 表示建議先在隔離環境驗證。所有專案均需自行確認授權、相容性及目前維護狀態。
+
+### 01. Agent Frameworks 與 Orchestration
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ | 有狀態的 Graph、分支、循環與持續工作流程 | 企業工作流程、人工核准、復原 |
+| [Deep Agents](https://github.com/langchain-ai/deepagents) ⭐ | 具有規劃、工具、Subagents 的 Agent Harness | 想快速建立完整 Agent |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | 軟體開發 Agent 平台與執行環境 | Coding Agent 平台、隔離執行 |
+| [Paperclip](https://github.com/paperclipai/paperclip) ⭐ | AI Agent 的組織、任務、預算與批准 | 多 Agent 持續運作管理 |
+| [Orkas](https://github.com/Orkas-AI/Orkas) | 桌面型專業 Agent 分工與交付 | 多角色桌面工作台 |
+| [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 🧪 | Plugin-first Agent Runtime 設計 | 研究 Harness 可擴充架構 |
+| [dsh-superagent Prototype](https://github.com/deepseek-ai/dsh-superagent-prototype) 🧪 | GitHub 事件觸發、任務授權與長時間執行 | Proactive / Event-driven Agents |
+| [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | 多角色 Agent 階層與工作規則 | 學習 Agent Team 組織設計 |
+| [RocketRide](https://github.com/rocketride-org/rocketride-server) | 視覺化 AI Pipeline 與可攜式工作流程 | Pipeline 設計、非工程師共同審查 |
+| [Parlant](https://github.com/emcie-co/parlant) | 對話式 Agent 的業務規則與客戶互動 | 客服、對話合規、規則化回應 |
+
+### 02. Coding Agents 與開發工作台
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [T3 Code](https://github.com/pingdotgg/t3code) ⭐ | 遠端管理多種 Coding Agent 工作階段 | 手機、桌面及遠端開發 |
+| [Worktrunk](https://github.com/max-sixty/worktrunk) ⭐ | Git Worktree 建立、切換、整合 | 多個 Agent 平行改程式 |
+| [Orca](https://github.com/stablyai/orca) | 平行 Coding Agents、結果比較與審查 | 同題多模型、多種實作比較 |
+| [Beads](https://github.com/gastownhall/beads) ⭐ | 持續任務、相依關係及工作狀態 | 跨 Session、長期工程任務 |
+| [ThinkRail](https://github.com/JetBrains/thinkrail) | Agentic IDE 與 Living Specifications | 規格驅動、IDE 整合 |
+| [Codync](https://github.com/leepokai/Codync) | 行動裝置遠端操作及協作 Coding Agents | Chat-based Agent Teams |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 聊天式本機 Agent 工作台 | 個人助理、Computer Use |
+| [OpenIDEA](https://github.com/l0ng-ai/openidea) | Rust 原生 IDE 與開發工具架構 | 研究 Native Tooling 與 IDE |
+| [Craft Anything](https://github.com/storytold/craft-anything) 🧪 | 研究既有軟體的可觀察行為並比較重建成果 | 具合法授權的舊系統翻新 |
+
+### 03. Skills、Prompt Workflow 與規格驅動開發
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [Anthropic Skills](https://github.com/anthropics/skills) ⭐ | Agent Skills 範例、`SKILL.md` 與資源封裝 | 學習建立可重用 Skill |
+| [Superpowers](https://github.com/obra/superpowers) ⭐ | 需求探索、TDD、計畫、審查流程 | 提升 Coding Agent 交付品質 |
+| [Everything Claude Code / ECC](https://github.com/affaan-m/ECC) ⭐ | Agents、Skills、Hooks、Rules 組合 | 研究 Harness Configuration |
+| [Matt Pocock Skills](https://github.com/mattpocock/skills) | 需求訪談、規格、Ticket、實作與 Review | 工程化 Skill Workflow |
+| [Google Elephant Goldfish Model](https://github.com/google/elephant-goldfish-model) | 完整上下文設計、獨立上下文審查 | 規格品質與交叉驗證 |
+| [Vercel Skills CLI](https://github.com/vercel-labs/skills) ⭐ | Skills 搜尋、安裝、更新與管理 | 統一 Skills 管理流程 |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | UI Accessibility、Layout、State Testing | 前端品質與邊界測試 |
+| [Unslop](https://github.com/heydamir/unslop) | 既有 UI 的設計檢查與改善 | AI 產生介面的視覺精修 |
+| [Taste Skill](https://github.com/Leonxlnx/taste-skill) | Art Direction 與前端視覺品質流程 | 介面設計方向與 Browser QA |
+| [Claude SEO](https://github.com/AgriciDaniel/claude-seo) | SEO/GEO 與內容檢查 Skills | 搜尋行銷內容工作流 |
+
+### 04. Browser Automation 與 Computer Use
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [agent-browser](https://github.com/vercel-labs/agent-browser) ⭐ | 結構化頁面 Snapshot 與操作 CLI | Browser Agent 開發 |
+| [Lightpanda](https://github.com/lightpanda-io/browser) ⭐ | 輕量化 Browser Engine 與自動化 | 瀏覽器執行效能研究 |
+| [Agent Desktop](https://github.com/vercel-labs/agent-desktop) ⭐ | Accessibility API 與桌面操作 | 無 API 的桌面工作流 |
+| [Scrapling](https://github.com/D4Vinci/Scrapling) ⭐ | Python 爬取、解析、資料取得 | 公開網頁資料蒐集 |
+| [Agent Reach](https://github.com/Panniantong/Agent-Reach) | 跨平台內容讀取工具 | Research Agent 的資料來源層 |
+| [Mika](https://github.com/wangzan101/Mika) 🧪 | Android App 控制與行動 Agent | 行動裝置工作自動化 |
+| [AI Goofish Monitor](https://github.com/Usagi-org/ai-goofish-monitor) | 定期蒐集、AI 分析與通知系統 | 研究監控產品架構 |
+
+> [!CAUTION]
+> 網頁讀取與自動化工具**不代表**可以任意存取受保護內容。請遵守目標服務的使用條款、授權、隱私規定與合理速率限制，並避免繞過存取控制。
+
+### 05. Memory、Context Engineering 與 RAG
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [Claude-Mem](https://github.com/thedotmack/claude-mem) ⭐ | Session 工作紀錄、持續記憶與檢索 | Coding Agent 重複工作太多 |
+| [Hindsight](https://github.com/vectorize-io/hindsight) ⭐ | 長期記憶、回想與反思 | 跨任務經驗累積 |
+| [Context Mode](https://github.com/mksglu/context-mode) ⭐ | 工具輸出裁切、索引與 Context 控制 | 大量工具輸出消耗 Tokens |
+| [XERJ](https://github.com/xerj-org/xerj) | 本機搜尋、程式碼/文件索引、MCP | Repo 與文件檢索 |
+| [WeKnora](https://github.com/Tencent/WeKnora) | 知識庫問答與 RAG 應用 | 企業文件知識服務 |
+| [OpenViking](https://github.com/volcengine/OpenViking) | Agent Context / Memory 組織 | 分層上下文管理研究 |
+| [Code-Graph-RAG](https://github.com/vitali87/code-graph-rag) | 程式碼知識圖譜與 RAG | 跨檔案程式結構理解 |
+
+### 06. Evaluation、Security 與 Governance
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill) ⭐ | 安全審查、候選漏洞驗證、證據整理 | Coding Agent Code Security |
+| [iFixAi](https://github.com/ifixai-ai/iFixAi) ⭐ | Agent 行為、越權、政策及對抗測試 | Agent 上線前驗收 |
+| [Agent Lightning](https://github.com/microsoft/agent-lightning) ⭐ | Agent Rollout 蒐集與強化學習 | 進階 Agent Training / Evaluation |
+| [NVIDIA Auto-Ontology](https://github.com/NVIDIA/auto-ontology) ⭐ | 商業語意層與 Text-to-SQL 評估 | 企業資料問答可信度 |
+| [Nasiko](https://github.com/Nasiko-Labs/nasiko) 🧪 | Agent 身分、模型路由、成本與工具管控 | Agent Control Plane |
+| [AiSOC](https://github.com/beenuar/AiSOC) 🧪 | AI 輔助安全事件調查與審查 | Security Operations |
+
+### 07. Enterprise Integration、Data 與 Infrastructure
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [Spotify Portal AI Plugins](https://github.com/spotify/portal-ai-plugins) ⭐ | 內部服務目錄、受控操作、開發者平台整合 | Enterprise Tool Gateway |
+| [NetBird](https://github.com/netbirdio/netbird) | Zero Trust 網路與安全存取 | Agent 連接內部服務 |
+| [Floci](https://github.com/floci-io/floci) ⭐ | 本機 AWS 服務模擬 | Cloud Agent PoC 整合測試 |
+| [FreeToken](https://github.com/FlashML-org/FreeToken) | MoE 模型推論、CPU/GPU 協同執行 | 私有 LLM 推論研究 |
+| [colibri](https://github.com/JustVugg/colibri) | 大型 MoE 模型的分層記憶體推論 | 受限硬體的模型服務 |
+| [World Monitor](https://github.com/koala73/worldmonitor) | 多來源情報儀表板與 AI 分析 | Enterprise Intelligence |
+
+### 08. AI 商業應用與多模態產品
+
+| Repo | 適合研究什麼 | 何時優先考慮 |
+|---|---|---|
+| [Postiz](https://github.com/gitroomhq/postiz-app) ⭐ | 社群內容排程、管理與分析 | Content Operations |
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) ⭐ | 近期話題研究與跨來源觀察 | Trend Discovery |
+| [HyperFrames](https://github.com/heygen-com/hyperframes) ⭐ | HTML/CSS 程式化影片生成 | 教學、品牌與資料動畫 |
+| [OpenMontage](https://github.com/calesthio/OpenMontage) | AI 影片製作 Pipeline | 多階段影片產製 |
+| [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 可重用影片風格與 Creative Skills | Agentic Filmmaking |
+| [SolidCraft](https://github.com/tangency-labs/solidcraft) ⭐ | 參數化 CAD 與 MCP | 製造業工程軟體 Agent |
+| [Archify](https://github.com/tt-a1i/archify) ⭐ | 系統架構圖、規格與程式碼證據 | 架構提案與審查 |
+| [Doop](https://github.com/kgoedecke/doop) | 人類與 Agent 共用設計 Canvas | UI 設計交付與核准 |
+| [Hex](https://github.com/anomalyco/hex) | 本機優先語音輸入與轉錄 | Voice-first Agent 介面 |
+
+### 09. 學習資源與研究
+
+| Repo / 資源 | 核心內容 | 推薦對象 |
+|---|---|---|
+| [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch) ⭐ | AI / RAG / Agent / Security / Evaluation 分階段學習 | 系統化補強基礎 |
+| [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) ⭐ | Agentic RAG、MCP、多模態範例專案 | 喜歡從程式學習的人 |
+| [Agent Skills 規格](https://agentskills.io/) | Skills 格式與可攜性 | Skill 作者 |
+| [MCP 官方文件](https://modelcontextprotocol.io/) | Tool / Context 協定與架構 | MCP Tool 開發者 |
+| [SWE-bench](https://www.swebench.com/) | 真實程式修復任務的評估方向 | Coding Agent 評估者 |
+| [LangGraph 官方文件](https://docs.langchain.com/oss/python/langgraph/overview) | Graph、Persistence、Human-in-the-loop | Python Agent 工程師 |
+
+---
+
+## ⚔️ 常見選型對決
+
+| 比較 | A 擅長 | B 擅長 | 建議怎麼選 |
+|---|---|---|---|
+| **Deep Agents vs LangGraph** | 快速建立可用 Harness | 精細設計狀態及流程 | 流程固定且具核准節點，優先 LangGraph |
+| **Superpowers vs ECC** | 一套一致的開發方法 | 大量可選 Skills / Hooks | 先用 Superpowers 建基準，再挑選 ECC 元件 |
+| **Worktrunk vs Orca** | CLI 與 Worktree 管理 | 多 Agent 操作 UI | 重 CLI 選 Worktrunk；重可視化選 Orca |
+| **Claude-Mem vs Beads** | 保留歷史與發現 | 管理任務與依賴 | 兩者互補，不是直接替代 |
+| **Hindsight vs Context Mode** | 長期記憶、反思 | 減少當次 Context 汙染 | 依「跨 Session」或「當次資料量」區分 |
+| **Scrapling vs agent-browser** | 資料擷取與解析 | 頁面操作及互動 | 批次擷取先評估 Scrapling；工作流操作先評估 agent-browser |
+| **Agent Desktop vs agent-browser** | 原生桌面軟體 | 網頁介面 | 取決於目標應用是 OS UI 還是 Browser |
+| **Lightpanda vs Chromium** | 輕量瀏覽器與效率研究 | 廣泛網站相容性 | 先用相同網站集合做相容性及成本基準測試 |
+| **Paperclip vs Orkas** | 任務、組織、成本治理 | 專業 Agent 的桌面工作體驗 | 多人持續營運重治理；個人探索重工作台 |
+| **Auto-Ontology vs 一般 Text-to-SQL** | 商業定義與語意層 | 直接由 Schema 產生查詢 | 指標定義複雜的企業應先建語意層 |
+
+---
+
+## 🛠️ 從收藏到實作：五個 Project Blueprints
+
+> 每個題目都設計為**可驗收的 PoC**。以下為建議整合，不代表所列專案已提供現成的一鍵串接。
+
+### Project A｜WorkshopFlow：企業內訓報名與候補 App
+
+**工具組合：** LangGraph / Deep Agents + Superpowers + Worktrunk + Pytest
+
+**需求：** HR 建課、員工報名、滿額候補、取消自動遞補、不得重複報名、同時搶最後一席不得超收。
+
+**設計重點：** 把名額一致性寫成資料庫 Transaction / Constraint，不靠 Agent Prompt 保證；Agent 只負責設計、實作與測試。
+
+**驗收：** 併發測試下不超收、候補順序正確、重複報名被拒絕、所有功能測試通過。
+
+### Project B｜Enterprise Research Agent：企業技術情報系統
+
+**工具組合：** Scrapling + Agent Reach + LangGraph + Hindsight
+
+**流程：** Source Discovery → Authorized Collection → Timestamped Snapshot → Deduplication → Analysis → Evidence Review。
+
+**驗收：** 每個結論可追溯來源 URL、擷取時間、原始快照；區分**觀測事實**與**推論**；不能把當前互動量誤當增長率。
+
+### Project C｜Agent Governance Lab：AI Agent 上線前驗收
+
+**工具組合：** iFixAi + Cloudflare Security Audit Skill + 自製 Policy Tests
+
+**流程：** 定義角色及規則 → 正常/惡意測試案例 → 執行 Agent → 獨立驗證 → 人工核准。
+
+**驗收：** 未授權操作為零、重要違規場景可被偵測、安全發現具可重現證據；紀錄每個 Case 的模型成本與人工修正時間。
+
+### Project D｜Legacy ERP Computer Use：無 API 內部系統自動化
+
+**工具組合：** Agent Desktop + agent-browser + Human Approval
+
+**流程：** Observe UI → Resolve Element → Execute Restricted Action → Verify Outcome → Audit Log。
+
+**驗收：** 30 個模擬任務的完成率、錯誤操作率、介面變動後恢復率；不得操作真實付款或其他高風險功能。
+
+### Project E｜Research-to-Video：技術研究自動生成解說影片
+
+**工具組合：** Research Agent + HyperFrames + FFmpeg / FFprobe
+
+**流程：** Source Verification → Script → Storyboard → Visual Assets → Render → Fact & Media QA。
+
+**驗收：** 影片長度、字幕正確率、來源引用、渲染成功率、素材授權與每支合格影片成本。
+
+---
+
+## 🗓️ 30 天學習路線
+
+| 週次 | 學習主題 | 推薦 Repo | 本週可交付成果 |
+|---|---|---|---|
+| **Week 1** | Agent 基礎、Tool Calls、狀態機 | LangGraph、Deep Agents | 具工具呼叫與可重試的單一 Agent |
+| **Week 2** | Coding Agents、Skills、TDD | Superpowers、Anthropic Skills、Worktrunk | 以規格與測試完成 5 個工程任務 |
+| **Week 3** | Browser、RAG、Memory | agent-browser、Scrapling、Hindsight | 可追溯資料來源的 Research Agent |
+| **Week 4** | Evaluation、Security、Governance | iFixAi、Cloudflare Skill、Auto-Ontology | 具有 Evaluation Report 的企業 PoC |
+
+### 下一步：挑戰進階主題
+
+- **Agent Teams / Dynamic Workflows：** Paperclip、Orkas、LangGraph。
+- **Computer Use：** Agent Desktop、Mika、Lightpanda。
+- **Enterprise Data Agent：** NVIDIA Auto-Ontology、WeKnora。
+- **Agent Training：** Microsoft Agent Lightning。
+- **On-premise Inference：** FreeToken、colibri。
+
+---
+
+## 📏 企業級 Agent 驗收框架
+
+別只報告「Agent 成功執行了」。真正的交付應量測以下指標：
+
+| 構面 | 指標 | 衡量方法 |
+|---|---|---|
+| **功能** | Task Success Rate | 通過獨立驗收案例數 / 總案例數 |
+| **品質** | Specification Compliance | 人工與自動化測試檢查需求覆蓋 |
+| **可靠性** | Recovery Success Rate | 中斷或重試後正確恢復的比例 |
+| **安全** | Unauthorized Action Rate | 不符合授權的實際操作 / 所有敏感操作 |
+| **可追溯性** | Evidence Coverage | 有來源、Trace 或操作證據的結果比例 |
+| **效率** | End-to-end Latency | 從輸入到合格結果的實際耗時 |
+| **成本** | Cost per Accepted Task |（模型 + 工具 + Infra + 人工審核成本）/ 合格任務數 |
+| **商業價值** | ROI |（可歸因效益 − 導入與營運成本）/ 導入與營運成本 |
+
+**最低實驗紀律：** 使用相同模型、相同題目、相同資料、相同驗收集；重複多次；記錄失敗案例；區分「作者自述」、「自己重現」、「外部獨立測試」。
+
+### 不可忽略的四條企業安全原則
+
+1. **Prompt 不是授權系統**：資料庫、API 和工具端必須實施真正的 Permission Check。
+2. **Sandbox 不是可選項**：不信任的程式與外部內容應在受限環境執行。
+3. **Human-in-the-loop 應放在高風險 Action 前**：例如付款、刪除、對外發信、修改生產設定。
+4. **記憶、Trace、Logs 也是敏感資料**：必須規範收集、遮罩、保留期限和刪除方式。
+
+---
+
+## 📊 SWOT：這份資源庫的價值與限制
+
+| | 分析 |
+|---|---|
+| **Strengths 優勢** | 台灣繁體中文、實務導向、按問題選型、強調驗收與企業治理，而非只堆積連結。 |
+| **Weaknesses 弱點** | Repo 變動快速；部分小型專案成熟度不足；跨專案整合不等於官方支援。 |
+| **Opportunities 機會** | 可發展成台灣 AI Agent 工程師的共同知識庫、Benchmark、架構模板與社群共同評測。 |
+| **Threats 威脅** | Star 數灌水或短期熱度、維護中止、授權變化、安全漏洞、過度宣傳的效能或產品能力。 |
+
+**編輯策略：** 更重視「解決真實問題、可重現、可驗證、持續維護」，而不是單純追求熱門數量。
+
+---
+
+## 🔎 收錄標準與資料可信度
+
+### 收錄條件
+
+- 有可查詢的**官方 Repository** 或具體官方文件。
+- 能清楚描述一項工程用途，而不是只提供宣傳口號。
+- 能辨識適用場景、主要限制，以及至少一個可驗收的實作方向。
+- 必須區分 Framework、應用產品、Skill、CLI、Infrastructure、Benchmark。
+- 不收錄明顯侵犯隱私、未經授權的存取流程或惡意用途。
+
+### 資料可信度標記（建議未來每次 PR 附上）
+
+| 標記 | 意義 |
+|---|---|
+| `official-docs` | 功能來自專案官方 README / Documentation |
+| `reproduced` | 已在記錄的環境實測成功 |
+| `independent-eval` | 有第三方可檢查的評估 |
+| `experimental` | 原型、Beta、或尚未完成正式環境驗證 |
+| `needs-review` | 授權、維護、功能或連結有待重新核查 |
+
+> **Stars 僅能作為探索訊號，不應作為唯一推薦依據。** 本清單刻意不凍結 Star 排名與效能數值。若未來新增 Trending 自動更新，請保留**觀測時間、統計視窗、資料來源**，區分每日／每週增加量與累積 Stars。
+
+### 維護建議
+
+- **每日**：搜集候選 Trending，不自動把所有熱門項目加入精選。
+- **每週**：人工確認候選 Repo 是否有實際工程價值，去重並更新分類。
+- **每月**：檢查連結、授權、Release、最近維護、已知安全風險。
+- **每季**：重新執行 Benchmark，移除過期或不再推薦的項目。
+
+---
+
+## 🤝 貢獻指南
+
+歡迎提交 PR 補充真正值得學習的 AI Agent Repository。
+
+### 新增 Repo 的 PR 範本
+
+```md
+### Repository Name
+- GitHub: https://github.com/owner/repository
+- Category: Agent Framework / Skills / Browser / Memory / Evaluation / ...
+- One-liner: 一句話說明它解決什麼問題
+- Best for: 真正適合的使用場景
+- Not for: 不適合的使用情境
+- Evidence: 官方文件、範例、Benchmark 連結
+- Limitations: 已知限制、資安或授權注意事項
+- Verified on: YYYY-MM-DD
+- Test idea: 一個可以客觀驗收的 PoC
+```
+
+### PR 審核規則
+
+1. **先搜尋是否重複**，同一 Repository 只收錄一次，必要時跨分類引用。
+2. **附官方連結**，避免使用不明第三方介紹作為唯一證據。
+3. **不可捏造 Star 數、效能或正式部署案例**。
+4. **不要把提案架構描述成官方現有整合**。
+5. **避免無依據的「最強」、「100% 準確」、「全面取代」等說法**。
+6. **重大安全疑慮需明確標註**，不以「開源」作為安全保證。
+
+### 可以協助的方向
+
+- 新 Repo 推薦與連結校對
+- Python / LangGraph 實作範例
+- Agent Evaluations 與 Benchmark 重現
+- 企業導入案例（附公開、可查證來源）
+- 將單一大 README 拆成分類子頁面
+- 英文版本與繁體中文術語校對
+
+---
+
+## 📖 核心參考資料
+
+以下提供概念、協定、原始實作與評估的官方入門連結：
+
+- [GitHub Trending](https://github.com/trending) — GitHub 趨勢探索入口。
+- [Anthropic Agent Skills](https://github.com/anthropics/skills) — Skills 範例與封裝方式。
+- [Agent Skills Specification](https://agentskills.io/) — Skills 規格。
+- [Model Context Protocol](https://modelcontextprotocol.io/) — MCP 官方文件。
+- [LangGraph Documentation](https://docs.langchain.com/oss/python/langgraph/overview) — Agent 工作流程與狀態管理。
+- [Microsoft Agent Lightning](https://github.com/microsoft/agent-lightning) — Agent Training 與評估研究。
+- [SWE-bench](https://www.swebench.com/) — 真實軟體工程任務評估。
 
 ---
 
 <div align="center">
 
-## ⭐ 覺得有用？Star 一下，明天繼續追
+### ⭐ Stop collecting Agents. Start engineering outcomes.
 
-**每天更新 · 零廣告 · 只推真正有動能的 repo**
+**真正優秀的 AI Agent 系統，不只會完成任務，還必須能被驗證、追蹤、控制與持續改善。**
 
-[![Star this repo](https://img.shields.io/github/stars/kevinluo/amazing-github-repos-everyday?style=social&label=Star)](https://github.com/kevinluo/amazing-github-repos-everyday)
+如果這份指南對你有幫助，可以在自己的 GitHub Repository 按下 **Star**，並透過 PR 分享可重現的實作經驗。
+
+**Made for builders who care about quality, reliability, and real-world impact.**
 
 </div>

@@ -20,7 +20,7 @@
 </div>
 
 > [!IMPORTANT]
-> **資料整理日：2026-11-04。** 本清單整理自歷次 GitHub AI Agent 追蹤紀錄，已去除重複項目，並依用途重新編排。它是**編輯精選與選型指南**，不是 GitHub 官方 Trending 排行，也不宣稱列出的專案都在當日熱門榜。開源專案變動很快，請以連結中的官方 README、版本、授權與安全公告為準。為避免誤導，**不放入無法持續維護的即時 Star 數及成長率**。
+> **資料整理日：2026-11-06。** 本清單整理自歷次 GitHub AI Agent 追蹤紀錄，已去除重複項目，並依用途重新編排。它是**編輯精選與選型指南**，不是 GitHub 官方 Trending 排行，也不宣稱列出的專案都在當日熱門榜。開源專案變動很快，請以連結中的官方 README、版本、授權與安全公告為準。為避免誤導，**不放入無法持續維護的即時 Star 數及成長率**。
 
 ## ✨ 為什麼值得收藏？
 
@@ -165,6 +165,7 @@
 |---|---|---|
 | [LangGraph](https://github.com/langchain-ai/langgraph) ⭐ | 有狀態的 Graph、分支、循環與持續工作流程 | 企業工作流程、人工核准、復原 |
 | [Deep Agents](https://github.com/langchain-ai/deepagents) ⭐ | 具有規劃、工具、Subagents 的 Agent Harness | 想快速建立完整 Agent |
+| [AgentScope Java 2.0](https://github.com/agentscope-ai/agentscope-java) | 分散式 Agent、工具核准、Sandbox、Session 恢復 | Java 企業 Agent 與長時間任務；需自行驗證正式部署 |
 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | 軟體開發 Agent 平台與執行環境 | Coding Agent 平台、隔離執行 |
 | [Paperclip](https://github.com/paperclipai/paperclip) ⭐ | AI Agent 的組織、任務、預算與批准 | 多 Agent 持續運作管理 |
 | [Orkas](https://github.com/Orkas-AI/Orkas) | 桌面型專業 Agent 分工與交付 | 多角色桌面工作台 |
@@ -194,6 +195,9 @@
 |---|---|---|
 | [Anthropic Skills](https://github.com/anthropics/skills) ⭐ | Agent Skills 範例、`SKILL.md` 與資源封裝 | 學習建立可重用 Skill |
 | [Superpowers](https://github.com/obra/superpowers) ⭐ | 需求探索、TDD、計畫、審查流程 | 提升 Coding Agent 交付品質 |
+| [OpenSpec](https://github.com/Fission-AI/OpenSpec) ⭐ | 需求變更的提案、規格、設計、任務與歸檔 | 既有專案需求治理、跨 Session 交付 |
+| [gstack](https://github.com/garrytan/gstack) ⭐ | 產品探索、架構、Code Review、QA、Release 的 Skills | Coding Agent 端到端交付；Codex 支援仍標示實驗性 |
+| [GitHub Spec Kit](https://github.com/github/spec-kit) | 可組合的規格驅動開發、Bug Fix 與評估流程 | 團隊標準化開發流程及品質關卡 |
 | [Everything Claude Code / ECC](https://github.com/affaan-m/ECC) ⭐ | Agents、Skills、Hooks、Rules 組合 | 研究 Harness Configuration |
 | [Matt Pocock Skills](https://github.com/mattpocock/skills) | 需求訪談、規格、Ticket、實作與 Review | 工程化 Skill Workflow |
 | [Google Elephant Goldfish Model](https://github.com/google/elephant-goldfish-model) | 完整上下文設計、獨立上下文審查 | 規格品質與交叉驗證 |
@@ -237,6 +241,7 @@
 | [Cloudflare Security Audit Skill](https://github.com/cloudflare/security-audit-skill) ⭐ | 安全審查、候選漏洞驗證、證據整理 | Coding Agent Code Security |
 | [iFixAi](https://github.com/ifixai-ai/iFixAi) ⭐ | Agent 行為、越權、政策及對抗測試 | Agent 上線前驗收 |
 | [Agent Lightning](https://github.com/microsoft/agent-lightning) ⭐ | Agent Rollout 蒐集與強化學習 | 進階 Agent Training / Evaluation |
+| [Microsoft TokenEconomizer](https://github.com/microsoft/TokenEconomizer) ⭐ | Micro-skills、Tool Pruning、Failure-loop Intervention | Coding Agent 成本 A/B Test；作者成效須自行重現 |
 | [NVIDIA Auto-Ontology](https://github.com/NVIDIA/auto-ontology) ⭐ | 商業語意層與 Text-to-SQL 評估 | 企業資料問答可信度 |
 | [Nasiko](https://github.com/Nasiko-Labs/nasiko) 🧪 | Agent 身分、模型路由、成本與工具管控 | Agent Control Plane |
 | [AiSOC](https://github.com/beenuar/AiSOC) 🧪 | AI 輔助安全事件調查與審查 | Security Operations |
@@ -258,6 +263,7 @@
 |---|---|---|
 | [Postiz](https://github.com/gitroomhq/postiz-app) ⭐ | 社群內容排程、管理與分析 | Content Operations |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) ⭐ | 近期話題研究與跨來源觀察 | Trend Discovery |
+| [Horizon](https://github.com/Thysrael/Horizon) | 多來源情報蒐集、評分、去重、雙語摘要及定期發布 | 技術情報雷達與研究自動化；注意資料時效 |
 | [HyperFrames](https://github.com/heygen-com/hyperframes) ⭐ | HTML/CSS 程式化影片生成 | 教學、品牌與資料動畫 |
 | [OpenMontage](https://github.com/calesthio/OpenMontage) | AI 影片製作 Pipeline | 多階段影片產製 |
 | [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) | 可重用影片風格與 Creative Skills | Agentic Filmmaking |
@@ -285,6 +291,7 @@
 |---|---|---|---|
 | **Deep Agents vs LangGraph** | 快速建立可用 Harness | 精細設計狀態及流程 | 流程固定且具核准節點，優先 LangGraph |
 | **Superpowers vs ECC** | 一套一致的開發方法 | 大量可選 Skills / Hooks | 先用 Superpowers 建基準，再挑選 ECC 元件 |
+| **OpenSpec vs Spec Kit** | 輕量化變更規格、既有專案 | 可擴充的開發流程與品質關卡 | 需求變更治理先試 OpenSpec；流程標準化先試 Spec Kit |
 | **Worktrunk vs Orca** | CLI 與 Worktree 管理 | 多 Agent 操作 UI | 重 CLI 選 Worktrunk；重可視化選 Orca |
 | **Claude-Mem vs Beads** | 保留歷史與發現 | 管理任務與依賴 | 兩者互補，不是直接替代 |
 | **Hindsight vs Context Mode** | 長期記憶、反思 | 減少當次 Context 汙染 | 依「跨 Session」或「當次資料量」區分 |
